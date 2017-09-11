@@ -76,10 +76,8 @@ module.exports = {
     'country': getFirstProperty(['dependency', 'country'])
   },
   'USA': {
-    'borough': getFirstProperty(['borough']),
-    'local': getFirstProperty(['locality', 'localadmin', 'county']),
-    'regional': getRegionalValue,
-    'country': getUSADependencyOrCountryValue
+    'neighborhood' : getFirstProperty(['neighbourhood']),
+    'borough': getFirstProperty(['borough','locality', 'localadmin', 'county']),
   },
   'AUS': {
     'local' : getFirstProperty(['locality', 'localadmin']),
